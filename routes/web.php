@@ -26,7 +26,7 @@ Route::get('posts/create', [App\Http\Controllers\PostController::class, 'create'
 // use App\Http\Controllers\PostController; -apache cakap kena ada
 Route::post('post', 'App\Http\Controllers\PostController@store');
 
-// posts(table), post(variable)
+// posts(table, folder), post(variable)
 Route::get('posts/{post}/edit', [App\Http\Controllers\PostController::class, 'edit']);
 Route::get('posts/{post}', [App\Http\Controllers\PostController::class, 'show']);
 Route::put('posts/{post}', [App\Http\Controllers\PostController::class, 'update']);
